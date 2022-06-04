@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="./js/index.js"></script>
+    <title>Sebastian Sanfilippo</title>
+</head>
+
+<body class="mybody">
+
+    <header id="head">
+        <nav id="navbar" class="">
+            <label for="nav-toggle" class="nav-toggle-label"></label>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <ul id="menu" class="v-effect-link">
+                <li class="nav-item"><a href="index.html#whoami" data-toggle="collapse"
+                        data-target=".navbar-collapse.show">Home</a></li>
+                <li class="nav-item"><a href="index.html#conae" data-toggle="collapse"
+                        data-target=".navbar-collapse.show">CONAE</a></li>
+                <li class="nav-item"><a href="index.html#sre" data-toggle="collapse"
+                        data-target=".navbar-collapse.show">SRE</a></li>
+                <li class="nav-item"><a href="index.html#experience" data-toggle="collapse"
+                        data-target=".navbar-collapse.show">Experience</a></li>
+                <li class="nav-item"><a href="index.html#education" data-toggle="collapse"
+                        data-target=".navbar-collapse.show">Education</a></li>
+                <li class="nav-item"><a href="index.html#contactForm" data-toggle="collapse"
+                        data-target=".navbar-collapse.show">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="pushBack"></div>
+    </header>
+
+    <main>
+        <section>
+            <h1  id="whoami">Who am I</h1>
+            <div class="about">
+                <div id="circle-shape">
+                    <img src="img/profile.webp" class="animate__animated animate__fadeInLeft animate__delay-2s">
+                    <p class="en_lang animate__animated animate__backInUp animate__delay-1s">Hello, I'm Sebastian,  
+                        and I'm a SRE at CONAE Cordoba Space Center CETT.</p>
+                    <p class="en_lang animate__animated animate__backInUp animate__delay-1s">I am from CABA by birth and from Córdoba by choice since 2008.</p>
+                    <p class="en_lang animate__animated animate__backInUp animate__delay-1s">How do I ended up here?
+                        my wife, girlfriend at that time, is from here. So... do the math.
+                        I've switched provinces, switched careers from biochemistry to computer science...</p>
+                    <p class="en_lang animate__animated animate__backInUp animate__delay-1s"> I went through a few jobs 
+                        in the local tech industry, always as a SysAdmin gaining experience.</p>
+                    <p class="en_lang animate__animated animate__backInUp animate__delay-1s">
+                    Now, it's almost 17 years working in differents IT possitions. </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <h1  id="sre">What is a SRE?</h1>
+
+            <div class="aboutqa-text">
+                <p class="animate__animated animate__backInUp animate__delay-2s">SRE stands for Site Reliability Engineer. 
+                    Is it a Developer, a SysAdmin or Tech lead?
+                    it's all of them, and none of them...</p>
+            </div>
+            <div class="iframe">
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/KIEO0JlHs0A"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section>
+            <h1  id="conae">What is CONAE?</h1>
+
+            <div class="aboutqa-text">
+                <p class="animate__animated animate__backInUp animate__delay-2s">CONAE Stands for Comision
+                    Nacional de Actividades Espaciales, it's the Argentinian NASA.  
+                    </p>
+            </div>
+            <div class="iframe">
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/s_nHgsJwbqo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+
+
+        <section>
+            <h1  id="experience">EXPERIENCE</h1>
+            <div class="container">
+                <div class="grid-row">
+                    <div class="button grid-item ">
+                        <a class="wrapping-link" href="#popup1"></a>
+                        <div class="grid-item-wrapper">
+                            <img class="animate__animated animate__backInUp animate__delay-2s"
+                                src="img\conae.png" alt="filter applied"></img>
+                        </div>
+                        <div id="popup1" class="overlay">
+                            <div class="popup">
+                                <a class="close" href="index.html#experience">&times;</a>
+                                <h4>CONAE: Ground Stations System Support Responsible</h4>
+                                <h6>07/2020 - Present</h6>
+                                <div class="content">
+                                    <p><strong>Lead Sysadmin/SRE role</strong> 
+                                        - Ground segment and User Segment task coordination and supervision.
+                                        - Participate in the acquisition process and implementation of new equipment
+                                        and / or software to attend to new own or third-party satellite missions.
+                                        - Generate plans and supervise their execution in everything related to
+                                        infrastructure update and improvement.
+                                        - Mentoring junior/ssr support team members.
+                                        - Interact and coordinate tasks with RF and DevOps Team.</p>
+                                </div>
+                                <h4>CONAE: CGSS & CUSS System Support</h4>
+                                <h6>08/2011 - 08/2020</h6>
+                                <div class="content">
+                                    <p><strong>Sr Sysadmin Role</strong> 
+                                        - Network installation and management.
+                                        - System and network monitoring: Nagios, cacti, Icinga .
+                                        - DB administration MS SQL Server, MySQL & Oracle.
+                                        - Installation, management and maintenance of HP Proliant/IBM System X/
+                                        Dell PowerEdge-PowerVault.
+                                        - Backup & restore. SDLT/LTO Tape library.
+                                        - VMware Environment deploy and management. MS HyperV and Proxmox
+                                        management.
+                                        - Satellite image processing software support: MEOS, PGS, ACS, McIDAS,
+                                        AAPP, SeaDAS, DBVM, IPOPP, CSPP, TeraScan, SpotImage, LPGS.
+                                        - Basic development for task automation: (Linux) Python, perl, bash and (Win)
+                                        vbscript, bat, powershell.
+                                        - Containers and orchestration support: Docker, Docker-Compose, Portainer,
+                                        Kubernetes, Ansible, Prometheus, Grafana.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button grid-item">
+                        <a class="wrapping-link" href="#popup2"></a>
+                        <div class="grid-item-wrapper">
+                            <img class="animate__animated animate__backInUp animate__delay-2s"
+                                src="img/veng.png"></img>
+                        </div>
+                        <div id="popup2" class="overlay">
+                            <div class="popup">
+                                <a class="close" href="index.html#experience">&times;</a>
+                                <h4>VENG. S.A: CUSS System Support</h4>
+                                <h6>07/2009 - 07/2011</h6>
+                                <div class="content">
+                                    <p><strong>Semi Sr. Sysadmin role</strong>
+                                    <p>- Backup & restore. SDLT/LTO Tape library.
+                                        - VMware Environment deploy and management.
+                                        - Satellite image processing software support: MEOS, PGS, ACS, McIDAS,
+                                        AAPP, SeaDAS, DBVM, IPOPP, CSPP, TeraScan, SpotImage, LPGS.
+                                        - Basic development for task automation: (Linux) Python, perl, bash and (Win)
+                                        vbscript, bat, powershell.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button grid-item">
+                        <a class="wrapping-link" href="#popup3"></a>
+                        <div class="grid-item-wrapper">
+                            <img class="animate__animated animate__backInUp animate__delay-2s"
+                                src="img/hpe.png"></img>
+                        </div>
+                        <div id="popup3" class="overlay">
+                            <div class="popup">
+                                <a class="close" href="index.html#experience">&times;</a>
+                                <h4>Hewlett-Packard Enterprise</h4>
+                                <h6>08/2008 - 07/2009</h6>
+                                <div class="content">
+                                    <p><strong>UNIX & Wintel Information Security</strong>
+                                    <p>- Wintel & UNIX Access management at General Motors global.
+                                        - Level 2 ITO support.</p>
+                                </div>
+                                <h4>Hewlett-Packard Enterprise</h4>
+                                <h6>04/2008 - 09/2008</h6>
+                                <div class="content">
+                                    <p><strong>Corporate Support Technician</strong>
+                                    <p>Repair and maintenance for HP Laptop, desktop and server lines.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button grid-item">
+                        <a class="wrapping-link" href="#popup4"></a>
+                        <div class="grid-item-wrapper">
+                            <img class="animate__animated animate__fadeInTopRight animate__delay-2s"
+                                src="img/gire.png" alt="filter applied"></img>
+                        </div>
+                        <div id="popup4" class="overlay">
+                            <div class="popup">
+                                <a class="close" href="index.html#experience">&times;</a>
+                                <h4>GIRE S.A.</h4>
+                                <h6>03.2005 - 03.2008</h6>
+                                <div class="content">
+                                    <p><strong>IT Support Technician</strong>
+                                    <p>- Help desk Windows/Linux.
+                                        - Network management.
+                                        - Installation, management and maintenance of HP Proliant/Blade servers.
+                                        - Backup & restore.
+                                        - VMware ESXi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </section>
+        <!--Experience Section End-->
+        <!--Education Section Start-->
+        <section>
+            <h1  id="education">EDUCATION</h1>
+            <div class="container">
+                <div class="grid-row">
+                    <div class="button grid-item">
+                        <a class="wrapping-link" href="#popuped1"></a>
+                        <div class="grid-item-wrapper">
+                            <img class="istlyrlogo animate__animated animate__zoomIn animate__delay-2s"
+                                src="img/famaf.png"></img>
+                        </div>
+                        <div id="popuped1" class="overlay">
+                            <div class="popup">
+                                <a class="close" href="index.html#education">&times;</a>
+                                <h4 >Computer Science</h4>
+                                <h6 >08/2017 - Present</h6>
+                                <div class="content">
+                                    <p >.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button grid-item">
+                        <a class="wrapping-link" href="#popuped2"></a>
+                        <div class="grid-item-wrapper">
+                            <img class="istlyrlogo animate__animated animate__zoomIn animate__delay-2s"
+                                src="img/utn.png"></img>
+                        </div>
+                        <div id="popuped2" class="overlay">
+                            <div class="popup">
+                                <a class="close" href="index.html#education">&times;</a>
+                                <h4 >Technical Systems Analist</h4>
+                                <h6 >03/2011 - 11/2013</h6>
+                                <div class="content">
+                                    <p>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button grid-item">
+                        <a class="wrapping-link" href="#popuped3"></a>
+                        <div class="grid-item-wrapper">
+                            <img class="istlyrlogo animate__animated animate__zoomIn animate__delay-2s"
+                                src="img/uba.png"></img>
+                        </div>
+                        <div id="popuped3" class="overlay">
+                            <div class="popup">
+                                <a class="close" href="index.html#education">&times;</a>
+                                <h4 >Biochemistry</h4>
+                                <h6 >03/2000 - 02/2003</h6>
+                                <div class="content">
+                                    <p>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h1 id="contactForm">Contact</h1>
+            <div class="container form-container">
+                <div class="contact_message animate__animated animate__fadeInTopRight animate__delay-2s">
+                    <p>Contact me!</p>
+                </div>
+                <form id="form" action="" onsubmit="return contactForm()">
+                    <div class="form-control">
+                        <div id="error_message"></div>
+                        <input type="text" id="name" placeholder="Enter your Name">
+                    </div>
+                    <div class="form-control">
+                        <input type="text" id="email" placeholder="Enter your Email">
+                    </div>
+                    <div class="form-control">
+                        <textarea id="message" placeholder="Enter your Message..." rows="5" name="message"></textarea>
+                    </div>
+                    <div class="form-control">
+                        <button type="submit" id="contact">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="lab_social_icon_footer">
+        <ul class="v-effect-link">
+            <li><a href="https://www.linkedin.com/in/sebastian-sanfilippo-b77a2871"><i id="social-ln" class="fa fa-linkedin"></i></a>
+            </li>
+            <li><a href="https://github.com/sebasanfilippo"><i id="social-gh" class="fa fa-github"></i></a></li>
+            <li><a href="https://www.instagram.com/sanfilippo.sebastian/"><i id="social-ig" class="fa fa-instagram"></i></a>
+            </li>
+            <li><a href="https://www.facebook.com/sebastianandres.sanfilippo"><i id="social-fb" class="fa fa-facebook"></i></a>
+            </li>
+            <li><a href="https://twitter.com/sebassanfi"><i id="social-tw" class="fa fa-twitter"></i></a></li>
+        </ul>
+        <div class="center">
+            <div>
+                <p class="footer-copy">Sebastian Sanfilippo &copy; 2022</p>
+            </div>
+    </footer>
+
+</body>
+
+</html>
